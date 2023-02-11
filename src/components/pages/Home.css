@@ -80,6 +80,14 @@
     text-align: center;
 }
 
+.homeWrapper .paymentContainer .paymentOptions .itemRow .active .iconContainer .icon {
+    color: #149dcc !important; 
+}
+
+.homeWrapper .paymentContainer .paymentOptions .itemRow .active .imageText {
+    color: #149dcc !important;
+}
+
 .homeWrapper .paymentContainer .paymentOptions .itemRow .item .iconContainer {
     display: flex;
     justify-content: center;
@@ -220,7 +228,7 @@
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     .homeWrapper .morebtn {
         right: 0px;
         top: 50px;

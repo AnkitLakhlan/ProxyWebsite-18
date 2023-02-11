@@ -8,7 +8,7 @@ import { BiCylinder } from "react-icons/bi";
 import { BsTelephone } from "react-icons/bs";
 import { RiBillLine } from "react-icons/ri"
 import { AiOutlineArrowDown } from "react-icons/ai"
-import { Link, useParams } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
 import AboutInfo from "../AboutInfo"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -41,81 +41,80 @@ const Home = () => {
                 <div className="paymentContainer" id="payments">
                     <div className="paymentOptions">
                         <div className="itemRow">
-                            <Link to="/prepaid" className="item">
+                            <NavLink to="/prepaid" className="item">
                                 <div className="iconContainer">
                                     <FaMobileAlt className='icon' />
                                 </div>
                                 <div className="imageText text">
                                     <p>Prepaid</p>
                                 </div>
-                            </Link>
-                            <Link to="/postpaid" className="item postpaid">
+                            </NavLink>
+                            <NavLink to="/postpaid" className="item">
                                 <div className="iconContainer">
                                     <GoDeviceMobile className='icon' />
                                 </div>
                                 <div className="imageText text">
                                     <p>Postpaid</p>
                                 </div>
-                            </Link>
-                            <Link to="/dth" className="item dth">
+                            </NavLink>
+                            <NavLink to="/dth" className="item">
                                 <div className="iconContainer">
                                     <GiRadarDish className='icon' />
                                 </div>
                                 <div className="imageText text">
                                     <p>DTH</p>
                                 </div>
-                            </Link>
-                            <Link to="/electricity" className="item electricity">
+                            </NavLink>
+                            <NavLink to="/electricity" className="item">
                                 <div className="iconContainer">
                                     <IoBulbOutline className='icon' />
                                 </div>
                                 <div className="imageText text">
                                     <p>Electricity</p>
                                 </div>
-                            </Link>
-
-                        </div>
-                        <div className="itemRow v-class-icons " id='itemRow'>
-                            <Link to="/gas" className="item gas">
+                            </NavLink>
+                            <NavLink to="/gas" className="item">
                                 <div className="iconContainer">
                                     <GiGasStove className='icon' />
                                 </div>
                                 <div className="imageText text">
                                     <p>Gas</p>
                                 </div>
-                            </Link>
-                            <Link to="/broadband" className="item broadband">
+                            </NavLink>
+                        </div>
+                        <div className="itemRow v-class-icons " id='itemRow'>
+                            <NavLink to="/broadband" className="item">
                                 <div className="iconContainer">
                                     <GiWifiRouter className="icon" />
                                 </div>
                                 <div className="imageText text">
                                     <p>Broadband</p>
                                 </div>
-                            </Link>
-                            <Link to="/cylinder" className="item  cylinder">
+                            </NavLink>
+                            <NavLink to="/cylinder" className="item">
                                 <div className="iconContainer">
                                     <BiCylinder className="icon" />
                                 </div>
                                 <div className="imageText text">
                                     <p>Cylinder</p>
                                 </div>
-                            </Link>
-                            <Link to="/landline" className="item  landline">
+                            </NavLink>
+                            <NavLink to="/landline" className="item">
                                 <div className="iconContainer">
                                     <BsTelephone className="icon" />
                                 </div>
                                 <div className="imageText text">
                                     <p>Landline</p>
                                 </div>
-                            </Link>
-                            <Link to="/water" className="item water">
+                            </NavLink>
+                            <NavLink to="/water" className="item">
                                 <div className="iconContainer">
                                     <FaHandHoldingWater className='icon' />
                                 </div>
                                 <div className="imageText text">
                                     <p>Water</p>
                                 </div>
-                            </Link>
+                            </NavLink>
                         </div>
                         <button className='morebtn' onClick={toggleHeight} ><AiOutlineArrowDown className='moreIcon' id='moreIcon'/>More</button>
                     </div>
@@ -163,10 +162,7 @@ const Home = () => {
                 <div className="aboutWrapper">
                     <AboutInfo domain="Shortpay.in" />
                 </div>
-
-
-
-                <Footer/>
+               <Footer/>
             </div>
 
         </>
