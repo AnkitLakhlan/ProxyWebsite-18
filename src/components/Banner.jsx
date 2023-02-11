@@ -78,7 +78,7 @@ const banner = (props) => {
                             <img src={bannerImg} alt="" />
                         </div>
                         <div className="banner-text">
-                            <h2>Dueepay</h2>
+                            <h2>Shortpay</h2>
                             <p>Easy & instant online recharge, eletricity bill payment, dth recharge, broadband recharge and many more services under one roof Pay-Bill.</p>
                         </div>
                     </div>
