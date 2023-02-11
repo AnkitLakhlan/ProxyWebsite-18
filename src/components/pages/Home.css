@@ -142,7 +142,7 @@
 
 .homeWrapper .features .overlay-container .features-text .features-text-row {
     display: flex;
-    align-items: start;
+    align-items: center;
     justify-content: center;
     flex-wrap: wrap;
 }
