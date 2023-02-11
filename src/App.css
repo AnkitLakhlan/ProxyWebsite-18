@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+html {
+  font-size: 6.25%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+  
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+}
+
+main {
+  background: linear-gradient(180deg,#fbfbfb 75%,#fff);
+  width: 100%;
+  height: calc(100vh - 68px);
+}
+
+.text {
+  font-size: 16rem
+}
+
+@media  only screen and (max-width: 1000px) {
+  html {
+    font-size: 6.4%;
+  }
+}
+
+@media  only screen and (max-width: 880px) {
+  html {
+    font-size: 6%;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  html{
+    font-size: 5.8%;
+  }
+}
+@media only screen and (max-width: 400px){
+  html{
+    font-size: 4%;
+  }
+}

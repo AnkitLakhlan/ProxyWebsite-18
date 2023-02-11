@@ -1,0 +1,64 @@
+.loginContainer {
+    width: 100%;
+}
+
+.loginContainer  .fielderror p {
+    color: red;
+    margin-top: 5px;
+    font-size: 14rem;
+}
+
+.loginContainer .row {
+    margin-top: 30px;
+    width: 100%;
+    position: relative;
+}
+
+.loginContainer .error {
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.loginContainer .error p {
+    color: red;
+    font-weight: bold;
+}
+
+.loginContainer .row input {
+    padding: 15px 12px;
+    border: none;
+    border-bottom: 2px solid #adadad;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 15rem;
+}
+
+.loginContainer .row input:focus {
+    border-bottom: 2px solid #149dcc;
+    outline: none;
+}
+
+
+.loginContainer .row button {
+    padding: 10px 15px;
+    width: 50%;
+    border: none;
+    background: white;
+    color: black;
+    font-weight: 500;
+    font-size: 19.2rem;
+    cursor: pointer;
+    border-radius: 10px;
+    min-width: 130px;
+}
+
+.loginContainer .row .passwordtoggleicon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 3%;
+    color: #149dcc;
+    cursor: pointer;
+    font-size: 20rem;
+}

@@ -1,0 +1,98 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+
+
+.aboutInfo {
+    padding: 30px 0;
+    z-index: 0;
+    width: 100%;
+    background-color: #55b4d4;
+}
+
+.aboutInfo .aboutInfoContainer {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.aboutInfo  .aboutInfoContainer .aboutInfo-Content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.aboutInfo  .aboutInfoContainer .aboutInfo-Content .aboutImg img {
+    width: 520px;
+}
+
+.aboutInfo  .aboutInfoContainer .aboutInfo-Content .aboutText {
+    margin-left: 50px;
+}
+
+.aboutInfo  .aboutInfoContainer .aboutInfo-Content .aboutText .title h2{
+    width: 100%;
+    text-align: center;
+    font-size: 30rem;
+    margin-bottom: 20px;
+    color: white
+}   
+
+.aboutInfo .aboutInfoContainer .aboutInfo-Content .aboutText .content p {
+    text-align: justify;
+    line-height: 35px;
+    color: white;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+
+.aboutInfo .aboutInfoContainer .aboutInfo-Content .content .readMoreBtnContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.aboutInfo .aboutInfoContainer .aboutInfo-Content .content .readMoreBtnContainer  button {
+    padding: 10px 15px;
+    border: none;
+    width: 200px;
+    background: white;
+    color: black;
+    font-weight: 500;
+    font-size: 19rem;
+    cursor: pointer;
+    border-radius: 10px;    
+    min-width: 120px;
+}
+
+
+/* Responsiveness  */
+@media only screen and (max-width: 1100px) {
+    .aboutInfo  .aboutInfoContainer .aboutInfo-Content .aboutImg img {
+        width: 420px;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .aboutInfo  .aboutInfoContainer .aboutInfo-Content {
+        flex-direction: column;
+    }
+
+    .aboutInfo  .aboutInfoContainer .aboutInfo-Content .aboutText {
+        margin-left: 0px;
+    }
+    
+
+    .aboutInfo  .aboutInfoContainer .aboutInfo-Content .aboutText .title h2 {
+        margin-top: 20px;
+    }
+}
+
+
+@media only screen  and (max-width: 768px){
+    .aboutInfo  .aboutInfoContainer .aboutInfo-Content .aboutImg img {
+        width: 320px;
+    }
+}

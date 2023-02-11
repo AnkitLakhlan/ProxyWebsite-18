@@ -1,0 +1,171 @@
+
+.navigationBar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    background-color: #149dcc;
+    background: linear-gradient(45deg, #149dcc, #000000);
+    cursor: pointer;
+    width: 100%;
+    min-height: 62px;
+}
+
+.navigationBar .burger {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 4%;
+    display: none;
+}
+
+.navigationBar .burger .line {
+    width: 28px;
+    background-color: white;
+    height: 4px;
+    margin: 3px 3px;
+}
+
+.navigationBar .logo {
+    padding: 10px 20px;
+}
+
+.navigationBar .logo p {
+    color: white;
+    font-weight: bold;
+    font-size: 32rem;
+}
+
+.navigationBar .navList {
+    padding: 10px 20px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    text-align: center;
+}
+
+.navigationBar .navList li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.navigationBar .burger {
+    display: none;
+}
+
+.navigationBar .navList li .active {
+    color: #adadad;
+}
+
+.navigationBar .navList li a {
+    color: white;
+    font-size: 18rem;
+    text-decoration: none;
+}
+
+.navigationBar .navList li a:hover {
+    color: #adadad;
+}
+
+.navigationBar .navList li p {
+    text-decoration: none;
+}
+
+.navigationBar .navList li button {
+    border: none;
+    background: none;
+    color: white;
+    font-size: 18rem;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.navigationBar .navList li button:hover {
+    color: #adadad;
+}
+
+.navigationBar .navList li .userData {
+    display: flex;
+    align-items: center;
+}
+
+.navigationBar .navList li .userData span {
+    color: white;
+}
+
+.navigationBar .navList li .userData span:hover {
+     color: #adadad;
+}
+
+.navigationBar .navList li .userData p {
+    font-size: 18rem;
+    color: white
+}
+
+.navigationBar .navList li .userData p:hover {
+    color: #adadad;
+}
+
+.navigationBar .navList li .userData .userLoginIcon {
+    margin-right: 4px;
+    font-size: 18rem;
+}
+
+.navigationBar .navList li .logout {
+    display: flex;
+    align-items: center;
+}
+
+.navigationBar .navList li button span .logoutIcon {
+    margin-top: 3px;
+}
+
+.navigationBar .navList li button span .userIcon {
+    margin-top: 4px;
+}
+
+.navigationBar .navList li button .btnText {
+    margin-left: 5px;
+    margin-top: 1px;
+}
+
+@media only screen and (max-width: 768px) {
+    .navigationBar .logo {
+        text-align: center;
+    }
+
+    .navigationBar .logo p {
+        font-size: 28rem;
+    }
+
+    .navigationBar {
+        flex-direction: column;
+        justify-content: center;
+        transition: all .7s ease-out;
+        height: 280px;
+    }
+
+    .navigationBar .navList {
+        flex-direction: column;
+    }
+
+
+    .navigationBar .burger {
+        display: block;
+    }
+
+    .h-nav {
+        height: 50px;
+    }
+
+    .v-class {
+        visibility: hidden;
+    }
+}

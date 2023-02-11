@@ -1,0 +1,31 @@
+.contentContainer {
+    position: relative;
+    max-width: 1033px;
+    min-height: 600px;
+    margin: 80px  auto 36px auto;
+    background-color: #55b4d4;
+    box-shadow: 0 0 3px 0 #55b4d4;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.contentContainer .content {
+    color: white;
+    font-size: 14rem;
+    margin-left: 10px;
+}
+
+.contentContainer .content h3 {
+    font-weight: 700;
+    color: white;
+    font-size: 24rem;
+    margin-bottom: 20px;
+}
+
+.contentContainer .content p {
+    margin-bottom: 15px;
+    font-size: 16rem;
+    color: white;
+    line-height: 25px;
+    font-weight: 300;
+}

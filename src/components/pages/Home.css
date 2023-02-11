@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.homeWrapper {
+    width: 100%;
+    height: 100vh;
+}
+
+
+/* payment options css  */
+.homeWrapper .paymentContainer {
+    width: 100%;
+    margin: 0px auto;
+    background-color: #55b4d4;
+    height: 200px;
+    transition: all 0.6s ease-in-out;
+    position: relative;
+}
+
+.increaseHeight {
+    height: 300px !important;
+}
+
+.rotate {
+    transform: rotate(3.142rad);
+}
+
+.v-class-icons {
+    visibility: hidden;
+}
+
+.homeWrapper .paymentContainer .paymentOptions {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0px;
+}
+
+.homeWrapper .paymentContainer .paymentOptions h3 {
+    width: 100%;
+    text-align: center;
+    font-size: 30rem;
+    color: white;
+}
+
+.homeWrapper .paymentContainer .paymentOptions .itemRow {
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    transition: all 0.4s ease-in-out;
+}
+
+.homeWrapper .morebtn {
+    border: none;
+    position: absolute;
+    right: 20%;
+    top: 50%;
+    transform: translateY(-50%);
+    outline: none;
+    background: transparent;
+    color: white;
+    font-size: 25rem;
+    cursor: pointer;
+
+}
+
+.homeWrapper .morebtn .moreIcon {
+    font-size: 25rem;
+    margin-bottom: -5px;
+    transition: all 0.6s ease-in-out;
+}
+
+.homeWrapper .paymentContainer .paymentOptions .itemRow .item {
+    text-decoration: none;
+    text-align: center;
+}
+
+.homeWrapper .paymentContainer .paymentOptions .itemRow .item .iconContainer {
+    display: flex;
+    justify-content: center;
+    padding: 5px 5px;
+}
+
+.homeWrapper .paymentContainer .paymentOptions .itemRow .item .iconContainer .icon {
+    color: white;
+    font-size: 40rem;
+}
+
+.homeWrapper .paymentContainer .paymentOptions .itemRow .item .imageText {
+    margin-top: 10px;
+    color: white;
+}
+
+.homeWrapper .features {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    background-image: url(https://www.pay-bill.in/assets/images/background6.jpg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: 633px;
+}
+
+.homeWrapper .features .features-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.2;
+    background-color: rgb(35, 35, 35);
+}
+
+.homeWrapper .features .overlay-container {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.homeWrapper .features .overlay-container .features-text {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.homeWrapper .features .overlay-container .features-text .features-text-row {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.homeWrapper .features .overlay-container .features-text .features-text-row .features-card {
+    background-color: transparent;
+    border: none;
+    margin-bottom: 20px;
+    max-width: 247px;
+}
+
+.homeWrapper .features .overlay-container .features-text .features-text-row .features-card .features-icon-container {
+    padding: 32px 32px 0px 32px;
+    border-radius: 0;
+    background-color: #149dcc;
+    display: flex;
+    justify-content: center;
+}
+
+.homeWrapper .features .overlay-container .features-text .features-text-row .features-card .features-icon-container .features-icon {
+    font-size: 50rem;
+    color: white;
+}
+
+.homeWrapper .features .overlay-container .features-text .features-text-row .features-card .features-card-text {
+    padding-bottom: 32px;
+    background: linear-gradient(#149dcc, transparent);
+}
+
+.homeWrapper .features .overlay-container .features-text .features-text-row .features-card .features-card-text {
+    text-align: center;
+}
+
+.homeWrapper .features .overlay-container .features-text .features-text-row .features-card .features-card-text h4 {
+    padding: 32px 15px 0px 15px;
+    color: white;
+    font-size: 28rem;
+}
+
+.homeWrapper .features .overlay-container .features-text .features-text-row .features-card .features-card-text p {
+    font-size: 16rem;
+    margin-bottom: 0;
+    padding: 32px 28px 0 28px;
+    color: white;
+}
+
+.ml30 {
+    margin-left: 50px;
+}
+
+/* Responsiveness  */
+/* more button css  */
+@media screen and (max-width: 1000px) {
+    .homeWrapper .morebtn {
+        right: 50px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .homeWrapper .morebtn {
+        right: 5px;
+        font-size: 18rem;
+    }
+
+    .homeWrapper .morebtn .moreIcon {
+        font-size: 20rem;
+    }
+}
+
+@media screen and (max-width: 871px) {
+    .homeWrapper .features .overlay-container {
+        top: 55%;
+    }
+}
+
+@media screen and (max-width: 573px) {
+    .ml30 {
+        margin-left: 10px;
+    }
+
+    .homeWrapper .features {
+        min-height: 700px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .homeWrapper .morebtn {
+        right: 0px;
+        top: 50px;
+    }
+}
+
+
+@media  screen and (max-width: 517px) {
+    .homeWrapper .paymentContainer .paymentOptions .itemRow  {
+        overflow-x: scroll;
+    }
+
+    .homeWrapper .paymentContainer .paymentOptions .itemRow .item  {
+        padding-bottom: 10px;
+    }
+
+    .homeWrapper .paymentContainer .paymentOptions .itemRow  {
+        justify-content: flex-start;
+    }
+}
+
+@media screen and (max-width: 532px) {
+    .ml30 {
+        margin-left: 0px;
+    }
+
+    .homeWrapper .features .overlay-container {
+        top: 50%;
+    }
+
+    .homeWrapper .features .overlay-container .features-text .features-text-row .features-card .features-card-text p {
+        padding: 20px 20px 0px 20px;
+    }
+
+    .homeWrapper .features .overlay-container .features-text .features-text-row .features-card .features-card-text h4 {
+        padding: 20px 20px 0px 20px;
+    }
+
+    .homeWrapper .features {
+        min-height: 900px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .homeWrapper .features {
+        min-height: 700px;
+    }
+}
