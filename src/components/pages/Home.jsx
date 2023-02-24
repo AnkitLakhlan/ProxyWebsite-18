@@ -82,7 +82,7 @@ const Home = () => {
                                 </div>
                             </NavLink>
                         </div>
-                        <div className="itemRow v-class-icons " id='itemRow'>
+                        <div className="itemRow v-class-icons" id='itemRow'>
                             <NavLink to="/broadband" className="item">
                                 <div className="iconContainer">
                                     <GiWifiRouter className="icon" />
@@ -116,7 +116,7 @@ const Home = () => {
                                 </div>
                             </NavLink>
                         </div>
-                        <button className='morebtn' onClick={toggleHeight} ><AiOutlineArrowDown className='moreIcon' id='moreIcon'/>More</button>
+                        <button className='morebtn' onClick={toggleHeight}><AiOutlineArrowDown className='moreIcon' id='moreIcon'/>More</button>
                     </div>
                     
                 </div>

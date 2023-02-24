@@ -76,6 +76,9 @@ const Wrapper = styled.div`
 `;
 
 const Footer = (props) => {
+    function scrollTop ()  {
+        window.scrollTo(0,0)
+    }
     return (
         <>
             <Wrapper>
@@ -87,26 +90,26 @@ const Footer = (props) => {
                                 <h3>Quick Links</h3>
                                 <ul className="linkList">
 
-                                    <li><Link to="/about">About</Link></li>
-                                    <li><Link to="/contact">Contact</Link></li>
-                                    <li><Link to="/termsandconditions">Terms and Conditions</Link></li>
-                                    <li><Link to="/privacypolicy">Privacy Policy</Link></li>
-                                    <li><Link to="/services">Services</Link></li>
+                                    <li onClick={scrollTop}><Link to="/about">About</Link></li>
+                                    <li onClick={scrollTop}><Link to="/contact">Contact</Link></li>
+                                    <li onClick={scrollTop}><Link to="/termsandconditions">Terms and Conditions</Link></li>
+                                    <li onClick={scrollTop}><Link to="/privacypolicy">Privacy Policy</Link></li>
+                                    <li onClick={scrollTop}><Link to="/services">Services</Link></li>
                                 </ul>
                             </div>
                             <div className="child">
                                 <h3>Need Help?</h3>
                                 <ul className="linkList">
-                                    <li>
+                                    <li onClick={scrollTop}>
                                         <Link to="/privacypolicy">Our Policies</Link>
                                     </li>
-                                    <li>
+                                    <li onClick={scrollTop}>
                                         <Link to="/termsandconditions">Terms and Conditions</Link>
                                     </li>
-                                    <li>
+                                    <li onClick={scrollTop}>
                                         <Link to="/contact">Contact Us</Link>
                                     </li>
-                                    <li>
+                                    <li onClick={scrollTop}>
                                         <Link to="/agent">Become Agent</Link>
                                     </li>
                                 </ul>
@@ -114,9 +117,9 @@ const Footer = (props) => {
                             <div className="child">
                                 <h3>Security Brand</h3>
                                 <ul className="linkList">
-                                    <li><Link to="/privacypolicy">Refund Policy</Link></li>
-                                    <li><Link to="/privacypolicy">Disclaimer</Link></li>
-                                    <li><Link to="/termsandconditions">Terms and Conditions</Link></li>
+                                    <li onClick={scrollTop}><Link to="/privacypolicy">Refund Policy</Link></li>
+                                    <li onClick={scrollTop}><Link to="/privacypolicy">Disclaimer</Link></li>
+                                    <li onClick={scrollTop}><Link to="/termsandconditions">Terms and Conditions</Link></li>
                                 </ul>
                             </div>
 

@@ -58,7 +58,7 @@ const Services = (props) => {
 
                         FAST And ROBUST
                         <br />
-                        Built with latest Technology stack and integrated payment gateway, Irecharge provides you with fast, secure
+                        Built with latest Technology stack and integrated payment gateway, {props.domain} provides you with fast, secure
                         and reliable bill payments on the go, anywhere, anytime.
                     </p>
                 </div>

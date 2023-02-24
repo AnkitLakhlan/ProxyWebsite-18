@@ -1,6 +1,7 @@
 import React from "react";
 import aboutImg from "./images/about.jpg";
 import "./AboutInfo.css";
+import { Link } from "react-router-dom";
 
 
 const AboutInfo = (props) => {
@@ -28,7 +29,7 @@ const AboutInfo = (props) => {
                                     is different- it lets you earn and will get cashback on every recharge and offline bill payment.
                                 </p>
                                 <div className="readMoreBtnContainer">
-                                    <button className="text">Read More</button>
+                                    <button className="text"><Link to="about">Read More</Link></button>
                                 </div>
                             </div>
 

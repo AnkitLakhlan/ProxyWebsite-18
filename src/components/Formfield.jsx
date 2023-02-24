@@ -63,7 +63,7 @@ const FormField = (props) => {
     useEffect(() => {
         getOptions();
         window.scroll({ top: 300, left: 0, behavior: "smooth" });
-    }, [])
+    }, [props.bill])
     const getParam = async (e) => {
         try {
             setApi({ param1: "", param2: "", param3: "", param4: "" })
