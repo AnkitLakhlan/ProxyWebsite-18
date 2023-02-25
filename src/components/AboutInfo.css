@@ -67,8 +67,8 @@
 }
 
 .aboutInfo .aboutInfoContainer .aboutInfo-Content .content .readMoreBtnContainer  button a {
-    color: white;
     text-decoration: none;
+    color: black;
 }
 
 
